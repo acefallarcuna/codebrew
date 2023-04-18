@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <title>HackFest</title>
+  
+  <!-- CSS AND BOOTSTRAP -->
+  <link rel="stylesheet" href="/src/Login/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- BOOTSTRAP WITH JAVASCRIPT -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+
+  <!-- FONT AWESOME -->
+  <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"></script>
+  
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#NAVBAR" style="font-family: 'Inter'; background-color: #f8f7f2;">
+
+  <!-- NAVBAR -->
+  <nav class="autohide navbar navbar-expand-lg fixed-top" id="NAVBAR">
+      <div class="container-fluid">
+        <a class="navbar-brand" href=""><img src="/Images/LogoWhite2.png" alt="Logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link" href="/src/Login/products.html"> Products </a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/src/Login/about.html"> About Us </a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="/src/Login/infopage.html"> What is Insurance? </a>
+          </li>
+          
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #008080; border: none;">
+                Welcome, <u>User!</u>
+              </button>              
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/src/Login/profile.html">User Profile</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </ul>
+        </div> 
+      </nav>
+
+  <br><br>
+
+  <!-- CAROUSEL -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/Images/HomepagePhoto.jpg" class="d-block  carouselImage" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/HomepagePhoto2.jpg" class="d-block  carouselImage" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/HomepagePhoto3.jpg" class="d-block  carosuelImage" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/Images/HomepagePhoto4.jpg" class="d-block  carosuelImage" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="productButton">
+      <button type="button" class="btnMain1"><b>Products -></b></button>
+    </div>
+
+    <br><br><br><br><br>
+    
+    <!-- Become Protech -->
+    <section id="BecomeProtechted">
+    <div class="row g-0">
+      <div class="col-12 col-sm-7" style="padding-left: 100px; font-size: 24px; color: #008080; text-align: justify;">
+          <p><b>ProTech</b> is a forward-thinking insurance company that understands the unique 
+            needs and concerns of Gen Z members. We offer a range of insurance products 
+            designed to protect you and your assets, including renters insurance, auto 
+            insurance, and personal liability coverage. With <b>ProTech</b>, you can have peace of 
+            mind knowing that you're covered, no matter what life throws your way.
+          </p>
+          <br>
+          <button type="button" class="btnMain2">Become <b>Protechted -></b></button>
+      </div>
+      <div class="col-12 col-sm-5">
+        <img src="/Images/ProTechLogo.png" alt="Logo" class="midLogo"></a>
+    </div>
+    </div>
+  </section>
+
+  <br><br><br><br><br><br>
+
+    <h1 style="color: #008080; text-align: center;"><b>Why do you need insurance?</b></h1>
+    <hr class="solid">
+    <br><br> 
+
+    <!-- Why do you need Insurance -->
+    <section id="InsuranceReason">
+    <div class="row g-0 text-center">
+
+      <div class="col-sm-12 col-md-6 col-xl-3">
+          <img src="/Images/FinancialSecurity.png" class="float-shadow">
+          <br><br>
+          <h6 style="color: #008080; font-size: 28px;"><b>Financial Security</b></h6>
+          <br>
+          <p style="font-size: 16px;">
+            To avoid financial difficulty or the disruption of future <br>
+            plans due to unanticipated catastrophes like accidents <br>
+            or sickness, financial security is essential.<br> 
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-3">
+          <img src="/Images/PeaceOfMind.png" class="float-shadow">
+          <br><br>
+          <h6 style="color: #008080; font-size: 28px;"><b>Peace of Mind</b></h6>
+          <br>
+          <p style="font-size: 16px;">
+            It's critical for people to have insurance peace of mind <br>
+            to prevent financial strain and anxiety amid unforeseen <br>
+            circumstances. <br>
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-3">
+          <img src="/Images/HealthcareAccess.png" class="float-shadow">
+          <br><br>
+          <h6 style="color: #008080; font-size: 28px;"><b>HealthCare Access</b></h6>
+          <br>
+          <p style="font-size: 16px;">
+            To ensure that people can get healthcare and afford <br>
+            the high expenses of healthcare services, access to <br>
+            insurance is crucial.<br>
+          </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-xl-3">
+          <img src="/Images/EarlyEnrollment.png" class="float-shadow">
+          <br><br>
+          <h6 style="color: #008080; font-size: 28px;"><b>Early Enrollment</b></h6>
+          <br>  
+          <p style="font-size: 16px;">
+            Early insurance enrollment can result in lower premiums <br>
+            and easier access to a wider selection of coverage <br>
+            options, protecting a person's financial future. <br>
+          </p>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br><br>
+  
+  <!--Footer  -->
+  <section id="Footer">
+    <div class="row g-0 text-center">
+      <div class="col">
+        <img src="/Images/LogoWhite2.png" alt="Logo" class="logo">
+      </div>
+      <div class="col">
+          <h6><b>Frequently Asked Questions</b></h6>
+          <p>
+            Lorem Ipsum
+          </p>
+          <p>
+            Lorem Ipsum
+          </p>
+      </div>
+      <div class="col">
+          <h6><b>About Us</b></h6>
+          <p>
+            Lorem Ipsum
+          </p>
+          <p>
+            Lorem Ipsum
+          </p>
+      </div>
+      <div class="col">
+          <h6><b>Products</b></h6>
+          <p>
+            Lorem Ipsum
+          </p>
+          <p>
+            Lorem Ipsum
+          </p>
+      </div>
+      <div class="col">
+        <h6><b>Customer Service</b></h6>
+        <p>
+          Lorem Ipsum
+        </p>
+        <p>
+          Lorem Ipsum
+        </p>
+    </div>
+      <hr style="border-top: 3px solid #f8f7f2">
+      <p style="text-align: center; color: #f8f7f2;"><b>Copyright © 2023 ProTech Inc. All rights reserved.</b></p>
+    </div>
+  </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="/src/index/index.js"></script>
+<script>
+  const SUPABASE_URL = 'https://rjleemtypmpnpcyiuana.supabase.co'
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJqbGVlbXR5cG1wbnBjeWl1YW5hIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODE3MzcxNTQsImV4cCI6MTk5NzMxMzE1NH0.r4sZNa25TeerGsV2-duD1GVbZchLDoqxl3D0tNT3bjE'
+
+  const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+
+  const Home = () => {
+    console.log(supabase);
+    console.log("Working");
+  };
+  Home()
+  
+  async function insertData(email, firstName, lastName, birthday, contactNumber, password) {
+    // Check if customer already exists in database
+    const { data: existingData, error } = await _supabase
+      .from('Customer')
+      .select('*')
+      .eq('email', email)
+  
+    if (error) {
+      console.log('Error inserting data:', error.message)
+      return
+    }
+  
+    if (existingData.length > 0) {
+      console.log('Data already exists:', existingData)
+      return
+    }
+  
+    // Define data object to insert
+    const data = {
+      email: email,
+      firstName: firstName,
+      lastName: lastName,
+      birthday: birthday,
+      contactNumber: contactNumber,
+      password: password
+    }
+  
+    // Insert data into table
+    const { data: insertedData, error: insertError } = await _supabase
+      .from('Customer')
+      .insert(data)
+  
+    // Check for errors
+    if (insertError) {
+      console.log('Error inserting data:', insertError.message)
+    } else {
+      console.log('Data inserted successfully:', insertedData)
+    }
+  }
+  
+  $('#my-form').submit(async function(event) {
+    event.preventDefault()
+  
+    // Get form field values
+    const email = $('#email').val()
+    const firstName = $('#first-name').val()
+    const lastName = $('#last-name').val()
+    const birthday = $('#birthday').val()
+    const contactNumber = $('#contact-number').val()
+    const password = $('#password').val()
+  
+    // Insert data into Supabase table if it doesn't already exist
+    await insertData(email, firstName, lastName, birthday, contactNumber, password)
+    location.reload();
+  })
+
+  // Check if login credentials match records in Supabase table
+  async function login(email, password) {
+    const { data, error } = await _supabase
+      .from('Customer')
+      .select('*')
+      .eq('email', email)
+      .eq('password', password)
+
+    if (error) {
+      console.log('Error logging in:', error.message)
+      return
+    }
+
+    if (data.length > 0) {
+      console.log('Login successful:', data[0])
+      window.location.href = '/src/Login/index.html' // Redirect to index.html on successful login
+    } else {
+      console.log('Login failed: email or password is incorrect')
+      // Do something here if login fails, e.g. display error message to user
+    }
+  }
+
+  // Handle form submission for login
+  $('#login-form').submit(async function(event) {
+    event.preventDefault()
+
+    // Get form field values
+    const email = $('#email').val()
+    const password = $('#password').val()
+
+    // Check if login credentials match records in Supabase table
+    await login(email, password)
+  })
+
+  // Get user data from Supabase table using email address
+  async function getUserData(email) {
+    const { data, error } = await _supabase
+      .from('Customer')
+      .select('firstName')
+      .eq('email', email)
+
+    if (error) {
+      console.log('Error getting user data:', error.message)
+      return null
+    }
+
+    if (data.length > 0) {
+      return data[0].firstName
+    }
+
+    return null
+  }
+
+  // Update UI to display logged-in user's name
+  async function updateLoggedInUserName(email) {
+    const firstName = await getUserData(email)
+
+    if (firstName) {
+      $('#user-name').text(firstName)
+    } else {
+      $('#user-name').text('User')
+    }
+  }
+
+  // Handle user login
+  async function login(email, password) {
+    const { user, error } = await _supabase.auth.signIn({
+      email: email,
+      password: password
+    })
+
+    if (error) {
+      console.log('Error logging in:', error.message)
+      return
+    }
+
+    console.log('Login successful:', user)
+    window.location.href = '/src/Login/index.html' // Redirect to index.html on successful login
+    await updateLoggedInUserName(email) // Update UI to display logged-in user's name
+  }
+
+  // Update UI to display logged-in user's name when page loads
+  async function initializeUI() {
+    const user = _supabase.auth.user()
+
+    if (user) {
+      await updateLoggedInUserName(user.email)
+    }
+  }
+
+  // Handle form submission for login
+  $('#login-form').submit(async function(event) {
+    event.preventDefault()
+
+    // Get form field values
+    const email = $('#email').val()
+    const password = $('#password').val()
+
+    // Log in user
+    await login(email, password)
+  })
+
+</script>
+<script src="//code.tidio.co/noy2rtmsc4sh7aboce2lu5ukxdn8couv.js" async></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body{
+    /* background-color:#008080 !important; */
+    background-image: url(/Images/PaymentBG.png);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+   }
+
+   .container{
+    height: 100vh;
+   }
+
+   .txt{
+    color: white !important;;
+   }
+   
+
+
+   /* PAY STYLES */
+
+   .GCash_Logo,.PayPal_Logo,.MasterCard_Logo,.Visa_Logo{
+    width: 8%;
+    height: 8%;
+   }
+
+   @media screen and (max-width:576px) {
+    .CC { margin-left: 25px !important;
+      
+    }
+
+  }
+
+
+   /* BILLING STYLES */
+
+   
+.billing{
+  font-size: 11px;
+}  
+
+.super-price{
+
+      top: 0px;
+font-size: 22px;
+}
+
+.super-month{
+
+      font-size: 11px;
+}
+
+
+.line{
+  color: #bfbdbd;
+}
+
+.free-button{
+
+background: #008080 !important;
+height: 52px;
+font-size: 15px;
+border-radius: 8px;
+color:white !important;
+}
+
+
+.payment-card-body{
+
+flex: 1 1 auto;
+padding: 24px 1rem !important;
+
+}

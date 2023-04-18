@@ -1,0 +1,128 @@
+body
+{
+    background-image: url("/Images/Contact.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+
+.scrolled-down
+{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out !important;
+}
+
+.scrolled-up
+{
+    transform:translateY(0); transition: all 0.3s ease-in-out !important;
+}
+
+.logo
+{
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+
+.midLogo
+{
+    position: absolute;
+    margin-top: -100px;
+    padding-left: 150px;
+    width: 600px;
+    height: 460px;
+}
+
+.navbar
+{
+    background-color: #008080; 
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.5);
+    height: 80px;
+}
+
+.nav-link
+{
+    color: #f8f7f2 !important;
+}
+
+.nav-item
+{
+    display: block;
+    text-align: center;
+    padding: 18px 18px;
+}
+
+.nav-itembutton
+{
+    display: block;
+    text-align: center;
+    padding: 18px;
+}
+
+.nav-item:hover 
+{
+    background-color: #005858;
+}
+
+#Footer
+{
+    position: absolute;
+    bottom: 0;
+    padding-top: 20px;
+    width: 100%;
+    background-color: #008080;
+    color: #f8f7f2;
+}
+
+.btnNav
+{
+    background-color: #f8f7f2;
+    color: #008080;
+    border-width: 0px;
+    border-radius: 15px;
+    height: 40px;
+    width: 120px;
+}
+
+.btnNav:hover
+{
+  background-color: #005858;
+  color: #f8f7f2;
+}
+
+.main
+{
+    text-align: center;
+    margin-top: 300px;
+}
+
+.mainPara
+{
+    text-align: left;
+    padding-left: 20%;
+}
+
+.btnMain
+{
+  background-color: #008080;
+  color: #f8f7f2;
+  border-width: 0px;
+  border-radius: 15px;
+  height: 60px;
+  width: 310px;
+  font-size: 24px;
+}
+
+.btnMain:hover
+{
+  background-color: #005858;
+  color: #f8f7f2;
+  border-width: 0px;
+  border-radius: 15px;
+  height: 60px;
+  width: 310px;
+  font-size: 24px;
+}
+
+.imgBG
+{
+    width: 100%;
+}

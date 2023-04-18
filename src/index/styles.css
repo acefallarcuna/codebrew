@@ -1,0 +1,179 @@
+.scrolled-down
+{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out !important;
+}
+
+.scrolled-up
+{
+  transform:translateY(0); transition: all 0.3s ease-in-out !important;
+}
+
+.logo
+{
+  position: relative;
+  width: 150px;
+  height: 100px;
+}
+
+.midLogo
+{
+  position: absolute;
+  margin-top: -100px;
+  padding-left: 150px;
+  width: 600px;
+  height: 460px;
+}
+
+.navbar
+{
+  background-color: #008080; 
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.5);
+  height: 80px;
+}
+
+.nav-link
+{
+  color: #f8f7f2 !important;
+}
+
+.nav-item
+{
+  display: block;
+  text-align: center;
+  padding: 18px 18px;
+}
+
+.nav-itembutton
+{
+  display: block;
+  text-align: center;
+  padding: 18px;
+}
+
+.nav-item:hover 
+{
+  background-color: #005858;
+}
+
+
+.carouselImage
+{
+  width: 100%;   
+}
+
+.carousel-inner
+{
+  width:100%;
+  max-height: 800px !important;
+}
+
+#Footer
+{
+  padding-top: 20px;
+  background-color: #008080;
+  color: #f8f7f2;
+}
+
+#productButton
+{
+  position: relative;
+  float: right;
+  margin-right: 300px;
+  margin-top: -150px;
+}
+
+hr.solid 
+{
+  border-top: 3px solid #181818;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.btnMain1
+{
+  background-color: #008080;
+  color: #f8f7f2;
+  border-width: 0px;
+  border-radius: 15px;
+  height: 70px;
+  width: 260px;
+  font-size: 32px;
+}
+
+.btnMain1:hover
+{
+  background-color: #005858;
+}
+
+.btnMain2
+{
+  background-color: #008080;
+  color: #f8f7f2;
+  border-width: 0px;
+  border-radius: 15px;
+  height: 70px;
+  width: 400px;
+  font-size: 32px;
+}
+
+.btnMain2:hover
+{
+  background-color: #005858;
+}
+
+.btnNav
+{
+  background-color: #f8f7f2;
+  color: #008080;
+  border-width: 0px;
+  border-radius: 15px;
+  height: 40px;
+  width: 120px;
+}
+
+.btnNav:hover
+{
+  background-color: #005858;
+  color: #f8f7f2;
+}
+
+.float-shadow 
+{
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+
+.float-shadow:before 
+{
+pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+}
+
+.float-shadow:hover 
+{
+  transform: translateY(-10px);
+}
+
+.float-shadow:hover:before 
+{
+  opacity: 1;
+  transform: translateY(10px);
+}

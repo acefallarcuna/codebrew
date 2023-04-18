@@ -1,0 +1,70 @@
+:focus{outline: none;}
+
+/* necessary to give position: relative to parent. */
+input[type="text"]{font: 15px/24px 'Inter'; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+input[type="password"]{font: 15px/24px 'Inter'; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+:focus{outline: none;}
+
+.mb-3{float: left; width: 27.33%; margin: 40px 3%; position: relative;} /* necessary to give position: relative to parent. */
+input[type="text"]{font: 15px/24px "Inter", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+input[type="password"]{font: 15px/24px "Inter", Arial, sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+.effect-16{border: 0; padding: 4px 0; border-bottom: 1px solid #ccc; background-color: transparent;}
+
+.effect-16 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background-color: #dff4e0; transition: 0.4s;}
+.effect-16:focus ~ .focus-border,
+.has-content.effect-16 ~ .focus-border{width: 100%; transition: 0.4s;}
+.effect-16 ~ label{position: absolute; left: 0; width: 100%; top: 9px; color: #aaa; transition: 0.3s; z-index: -1; letter-spacing: 0.5px;}
+.effect-16:focus ~ label, .has-content.effect-16 ~ label{top: -16px; font-size: 12px; color: #4caf50; transition: 0.3s;}
+
+.btn-color{
+  background-color: #fff  !important;
+  color: #008080 !important;
+  width: 60%;
+  margin-top: 25px !important;
+}
+
+.cardbody{
+  background-color: #008080 !important;
+}
+
+.card-body{
+  border-radius: 30px;
+}
+
+a{
+  text-decoration: none;
+}
+.Logo{
+  width: 200px;
+  height: 200px;
+  z-index: 1;
+
+}
+
+.txt{
+  color: #fff !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+/* Min activates when above of x 
+ Max activate when below of x */
+/* @media screen and (min-width: 1300px)
+{
+  .Logo {  margin-left: 50px !important;
+}
+}
+@media screen and (max-width: 1000px)
+{
+  .Logo {  margin-left: 0px !important;
+}
+} */
+
+
+
+

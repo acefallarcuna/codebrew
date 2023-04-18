@@ -1,0 +1,146 @@
+.scrolled-down
+{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out !important;
+}
+
+.scrolled-up
+{
+    transform:translateY(0); transition: all 0.3s ease-in-out !important;
+}
+
+.logo
+{
+    position: relative;
+    width: 150px;
+    height: 100px;
+}
+
+.midLogo
+{
+    position: absolute;
+    margin-top: -100px;
+    padding-left: 150px;
+    width: 600px;
+    height: 460px;
+}
+
+.navbar
+{
+    background-color: #008080; 
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.5);
+    height: 80px;
+}
+
+.nav-link
+{
+    color: #f8f7f2 !important;
+}
+
+.nav-item
+{
+    display: block;
+    text-align: center;
+    padding: 18px 18px;
+}
+
+.nav-itembutton
+{
+    display: block;
+    text-align: center;
+    padding: 18px;
+}
+
+.nav-item:hover 
+{
+    background-color: #005858;
+}
+
+#Footer
+{
+    padding-top: 20px;
+    background-color: #008080;
+    color: #f8f7f2;
+}
+
+.btnNav
+{
+    background-color: #f8f7f2;
+    color: #008080;
+    border-width: 0px;
+    border-radius: 15px;
+    height: 40px;
+    width: 120px;
+}
+
+.btnNav:hover
+{
+  background-color: #005858;
+  color: #f8f7f2;
+}
+
+.float-shadow 
+{
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    -webkit-tap-highlight-color: transparent;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+
+.float-shadow:before 
+{
+pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    transition-duration: 0.3s;
+    transition-property: transform opacity;
+}
+
+.float-shadow:hover 
+{
+    transform: translateY(-10px);
+}
+
+.float-shadow:hover:before 
+{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.main
+{
+    text-align: center;
+}
+
+.mainLogo
+{
+    height: 450px;
+    width: 450px;
+}
+
+.mainPara
+{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+hr.solid 
+{
+  border-top: 5px solid #008080;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}

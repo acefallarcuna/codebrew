@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>HackFest</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackFest</title>
+
+    <!-- CSS AND BOOTSTRAP -->
+    <link href="/src/index/productspage.css" rel="stylesheet" />
+ 
+    <!-- BOOTSTRAP WITH JAVASCRIPT -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <!-- FONT AWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body style="font-family: 'Inter'; background-color: #f8f7f2;">
+    <form id="form1" runat="server">
+            <script src="jquery.fullpage.min.js"></script>
+	<script src="jquery-1.11.1.min.js"></script>
+	<script src="jquery.onepage-scroll.min.js"></script>
+	<script>
+        $(document).ready(function () {
+            var delay = false;
+            var currentPage = 0;
+            var pageCount = $(".section").length;
+            var swipe = document.getElementsByTagName('.section');
+            $(document).on('mousewheel DOMMouseScroll', function (event) {
+                event.preventDefault();
+                if (delay) return;
+                delay = true;
+                setTimeout(function () { delay = false }, 100)
+                var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+                console.log(wd);
+                if (wd < 0) {
+                    if (currentPage < pageCount) {
+                        currentPage++;
+                    }
+                } else {
+                    if (0 < currentPage) {
+                        currentPage--;
+                    }
+                }
+                $('html,body').animate({
+                    scrollTop: $('#sec' + currentPage).offset().top
+                }, 700);
+                $('#tag' + currentPage).addClass('active');
+                for (var i = 0; i <= pageCount; i++) {
+                    if (i != currentPage) {
+                        $('#tag' + i).removeClass('active');
+                    }
+                }
+            });
+        });
+    </script>
+
+    <section id="navbarr">
+        <nav class="navigation-bar">
+            <ul>
+              <li><img class="homepageLogo1" src="/Images/LogoWhite2.png"></li>
+              <li><a href="/src/index/productsPage.html">Products</a></li>
+              <li><a href="/src/index/about.html">About Us</a></li>
+              <li><a href="/src/index/infopage.html">What is Insurance?</a></li>
+            <a href="/src/index/login.html"><button type="button" class="btnNav"><b>Join Us!</b></button></a>
+            </ul>
+        </nav>
+    </section>
+    
+		<section id="life">
+		<div class="section" id="sec1">
+				<div class="lifepic"></div>
+				<div class="col-2">
+                    <div id="lifecol">
+					<img class="lifeicon" src="/Images/LifeIcon.png">
+                        <h1>Life Insurance</h1>
+                        <p>Protect your loved ones' future with ProTech's comprehensive life insurance plans that provide financial security in the event of unexpected death or disability. </p>
+                        <br>
+                        <button type="button" class="btnMain1">Get Life&nbsp;<b>ProTechted!</b></button>
+                        </div>
+				</div>
+		</div>
+		</section>
+		<section id="health">
+		<div class="section" id="sec2">
+				<div class="col-1">
+                    <img class="healthicon" src="/Images/HealthIcon.png">
+                        <h1>Health Insurance</h1>
+                        <p>ProTech's health insurance policies offer peace of mind and protection for Gen Z members against unexpected medical expenses, ensuring they have access to quality healthcare when they need it. </p>
+                        <br>
+                        <button type="button" class="btnMain2">Get Health&nbsp;<b>ProTechted!</b></button>
+				</div>
+				<div class="healthpic"></div>
+		</div>
+		</section>
+    		<section id="auto">
+		<div class="section" id="sec3">
+				<div class="autopic"></div>
+				<div class="col-2">
+					<img class="autoicon" src="/Images/AutoIcon.png">
+                        <h1>Auto Insurance</h1>
+                        <p>Whether you're a new driver or an experienced one, ProTech's auto insurance plans provide reliable coverage for your car, protecting you against accidents, theft, and other unforeseen events. </p>
+                        <button type="button" class="btnMain1">Get Auto&nbsp;<b>ProTechted!</b></button>
+				</div>
+		</div>
+		</section>
+        <section id="travel">
+            <div class="section" id="sec4">
+                    <div class="col-1">
+                        <img class="travelicon" src="/Images/TravelIcon.png">
+                        <h1>Travel Insurance</h1>
+                        <p>Don't let travel mishaps ruin your adventure. ProTech's travel insurance provides coverage for unexpected travel expenses, medical emergencies, trip cancellations, and more, allowing you to explore the world with confidence. </p>
+                        <button type="button" class="btnMain2">Get Travel&nbsp;<b>ProTechted!</b></button>
+                    </div>
+                    <div class="travelpic"></div>
+            </div>
+            </section>
+    </form>
+    <script src="//code.tidio.co/noy2rtmsc4sh7aboce2lu5ukxdn8couv.js" async></script>
+</body>
+</html>
