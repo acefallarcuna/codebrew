@@ -1,1 +1,1 @@
-Live Preview: codebrew-hackfest.netlify.app
+Live Preview: https://codebrew-hackfest.netlify.app
