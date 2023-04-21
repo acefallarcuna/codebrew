@@ -55,7 +55,7 @@
   background-color: #005858;
 }
 
-
+/* CAROUSEL */
 .carouselImage
 {
   width: 100%;   
@@ -65,6 +65,13 @@
 {
   width:100%;
   max-height: 800px !important;
+}
+
+.carousel-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #Footer
@@ -130,6 +137,16 @@ hr.solid
   border-radius: 15px;
   height: 40px;
   width: 120px;
+}
+
+.btnNav2
+{
+  background-color: #008080;
+  color: #f8f7f2;
+  border-width: 0px;
+  border-radius: 15px;
+  height: 40px;
+  width: 40px;
 }
 
 .btnNav:hover

@@ -52,6 +52,21 @@ a{
   opacity: 1; /* Firefox */
 }
 
+.headerLogin{
+  font-size: 56px;
+  text-align: center;
+  color: #f8f7f2;
+  font-family: Inter;
+  margin-top: 10%;
+  margin-bottom: 4%;
+  letter-spacing: 1px;
+}
+
+label{
+  color: #f8f7f2;
+  margin-bottom: 2%;
+}
+
 /* Min activates when above of x 
  Max activate when below of x */
 /* @media screen and (min-width: 1300px)

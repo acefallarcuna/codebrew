@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="main_nav">
           <ul class="navbar-nav">
           <li class="nav-item">
-          <a class="nav-link" href="/src/Login/products.html"> Products </a>
+          <a class="nav-link" href="/src/Login/productsPage.html"> Products </a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="/src/Login/about.html"> About Us </a>
@@ -49,7 +49,7 @@
           <ul class="navbar-nav ms-auto">
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #008080; border: none;">
-                Hi, <u>Placeholder!</u>
+                Hi, <u>Elijah!</u>
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/src/Login/profile.html">User Profile</a></li>
@@ -62,16 +62,27 @@
 
     <div class="main">
       <div class="row g-0 text-center">
-        <div class="col">
-          
-        </div>
-        <div class="col">
+        <!-- wag galawin andito yung image -->
+        <div class="col-12 col-sm-6">
           <p style="font-size: 40px;">
-            Please Contact <b>PLACEHOLDER,</b> <br>
+          
+          </p>
+          </div>
+        <div class="col-12 col-sm-6">
+  
+          
+
+          <p style="font-size: 40px;">
+            Please contact us <br>
             for additional details.
           </p>
+          
           <br><br><br>
-          <button type="button" class="btnMain">Return to Homepage</button>
+          <button type="button" class="  btnMain" id="send" name="send">Send an inquiry </button>
+          <br>
+          <br>
+          <a href="/src/Login/profile.html" style="text-decoration: none; cursor: pointer;" ><button type="button" class="btnMain ">View my policies</button></a>
+       
         </div>
     </div>
 
@@ -125,5 +136,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="/src/Login/index.js"></script>
 <script src="//code.tidio.co/noy2rtmsc4sh7aboce2lu5ukxdn8couv.js" async></script>
+
+<script>
+// Get the button element
+const sendEmailBtn = document.getElementById("send");
+
+// Add a click event listener to the button
+sendEmailBtn.addEventListener("click", function() {
+  // Construct the Gmail compose URL with the recipient email address and subject pre-filled
+  // const recipientEmail = "rasheed.taban12@gmail.com";
+  // const subject = "I would like to inquire an insurance for  [INSURANCE OF YOUR CHOICE]";
+  const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=codebrew.protech@gmail.com&su=I would like to inquire a personalized insurance policy&body=";
+
+  // Open a new tab and redirect it to the Gmail compose URL
+  window.open(gmailUrl);
+});
+</script>
 </body>
 </html>

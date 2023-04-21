@@ -26,36 +26,39 @@
 </head>
 
 <body data-bs-target="#NAVBAR" style="font-family: 'Inter'; background-color: #f8f7f2;">
-    <nav class="autohide navbar navbar-expand-lg fixed-top" id="NAVBAR">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/index.html"><img src="/Images/LogoWhite2.png" alt="Logo" class="logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="main_nav">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-            <a class="nav-link" href="productsPage.html"> Products </a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="about.html"> About Us </a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="infopage.html"> What is Insurance? </a>
-            </li>
-            
-            </ul>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-itembutton">
-              <a href="/src/index/Register.html"><button type="button" class="btnNav"><b>Join Us!</b></button></a>
-              </li>
-            </ul>
-          </div> 
-        </nav>
+  <nav class="autohide navbar nav-underline navbar-expand-lg fixed-top " id="NAVBAR">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html"><img src="/Images/LogoWhite2.png" alt="Logo" class="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main_nav">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+        <a class="nav-link" href="/index.html"> Home </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/src/index/productsPage.html"> Our Products </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/src/index/about.html"> Our Story </a>
+        </li>
+        
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-itembutton">
+          <a href="/src/index/login.html"><button type="button" class="btnNav2"><b>Login</b></button></a>
+          </li>
+          <li class="nav-itembutton">
+          <a href="/src/index/Register.html"><button type="button" class="btnNav"><b>Join Us!</b></button></a>
+          </li>
+        </ul>
+      </div> 
+  </nav>
 <br><br><br>
   <div class="d-flex align-items-center justify-content-center">
     <div class="row">
-      <div class="col-12 col-sm-11 col-xl-10 offset-xl-1">
+      <div class="col-12 col-sm-11 col-xl-8 offset-xl-2">
         <div class="my-5">
           <div class="cardbody p-lg-4 rounded-5">
             <div class="text-center">
@@ -63,25 +66,16 @@
             </div>
 
             <div class="row">
-              <!-- <div class="col-10 offset-sm-1 mb-3 input-effect">
-                <label class="txt" style="padding-bottom: 20px;">Email</label>
-                <input class="effect-16 txt" type="text" id="email" placeholder="Enter Email">
-                <span class="focus-border"></span>
-            </div> -->
-
+            <div class="headerLogin"><h1>Log-In</h1></div>
             <div class="col-10 offset-sm-1 mt-1 mb-5">
-              <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1"
+              <label>E-mail</label>
+              <input type="text" class="form-control" placeholder="Enter your E-mail" aria-label="Email" aria-describedby="basic-addon1"
                 size="20" id="email">
             </div>
 
-            <!-- <div class="col-10 offset-sm-1 mb-3 input-effect">
-              <label class="txt" style="padding: 20px 0px;">Password</label><br>
-              <input class="effect-16 txt" type="password" name="password" id="password" placeholder="Enter Password">
-              <span class="focus-border"></span>
-            </div> -->
-
             <div class="col-10 offset-sm-1 mt-1 mb-5">
-              <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1"
+              <label>Password</label>
+              <input type="password" class="form-control" placeholder="Enter your Password" aria-label="Password" aria-describedby="basic-addon1"
                 size="20" name="password" id="password">
             </div>
 

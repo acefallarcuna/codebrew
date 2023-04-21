@@ -55,6 +55,11 @@
     background-color: #005858;
 }
 
+
+.table{
+    margin-top: 95px;
+}
+
 #Footer
 {
     padding-top: 20px;
@@ -71,6 +76,16 @@
     border-radius: 15px;
     height: 40px;
     width: 120px;
+}
+
+.btnNav2
+{
+  background-color: #008080;
+  color: #f8f7f2;
+  border-width: 0px;
+  border-radius: 15px;
+  height: 40px;
+  width: 40px;
 }
 
 .main

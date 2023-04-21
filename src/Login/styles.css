@@ -58,15 +58,54 @@
 
 .carouselImage
 {
-  width: 100%;   
+  /* width: 100%;
+  height: 1080px !important;    */
 }
 
 .carousel-inner
 {
-  width:100%;
+  /* width:100%; */
   max-height: 800px !important;
 }
 
+.carousel-text{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #008080;
+  
+}
+.carousel-text-landing{
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #008080;
+}
+
+.join{
+  background-color: #008080 !important;
+  color: white !important;
+}
+
+.learn{
+  background-color: white !important;
+  border: 2px solid black !important;
+  color: black !important;
+}
+
+.big-Heading{
+  font-size: 80px !important;
+}
+
+.minor-Heading{
+  font-size: 32px;
+}
+
+.hero{
+  height: 800px !important;
+}
 #Footer
 {
   padding-top: 20px;
@@ -82,14 +121,6 @@
   margin-top: -150px;
 }
 
-hr.solid 
-{
-  border-top: 3px solid #181818;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
-
 .btnMain1
 {
   background-color: #008080;
@@ -100,6 +131,16 @@ hr.solid
   width: 260px;
   font-size: 32px;
 }
+
+hr.solid 
+{
+  border-top: 3px solid #181818;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+
 
 .btnMain1:hover
 {
@@ -132,10 +173,30 @@ hr.solid
   width: 120px;
 }
 
+.btnNav2
+{
+  background-color: #008080;
+  color: #f8f7f2;
+  border-width: 0px;
+  border-radius: 15px;
+  height: 40px;
+  width: 40px;
+}
+
 .btnNav:hover
 {
   background-color: #005858;
   color: #f8f7f2;
+}
+
+.btnNav2
+{
+  background-color: #008080;
+  color: #f8f7f2;
+  border-width: 0px;
+  border-radius: 15px;
+  height: 40px;
+  width: 40px;
 }
 
 .float-shadow 
